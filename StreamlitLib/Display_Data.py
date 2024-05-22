@@ -34,7 +34,9 @@ df=pd.DataFrame(
 )
 
 #you can also pass a Pandas Styler object to change the style of the renderd DataFrame
-st.dataframe(df.style.highlight_max(axis=0))
+st.dataframe(df.style.highlight_max(axis=0,))
 
 st.markdown("### TABLE EXAMPLE ")
 st.table(df)
+
+
