@@ -1,0 +1,25 @@
+Transaction at 2024-06-25 19:43:43
+Tomatoes 🍅 - 10.0 kg on 2024-06-25 with price of 1.5 $/kg (Total: 15.0 $)
+Lettuce 🥬 - 0.5 kg on 2024-06-25 with price of 0.9 $/kg (Total: 0.45 $)
+Strawberry 🍓 - 0.5 kg on 2024-06-25 with price of 3.0 $/kg (Total: 1.5 $)
+Cucumber 🥒 - 3.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 3.5999999999999996 $)
+Cucumber 🥒 - 3.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 3.5999999999999996 $)
+Cucumber 🥒 - 3.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 3.5999999999999996 $)
+Potatoes 🥔 - 3.0 kg on 2024-06-25 with price of 1.0 $/kg (Total: 3.0 $)
+Melon - 3.0 kg on 2024-06-25 with price of 2.0 $/kg (Total: 6.0 $)
+
+Transaction at 2024-06-25 19:44:20
+Lettuce 🥬 - 3.0 kg on 2024-06-25 with price of 0.9 $/kg (Total: 2.7 $)
+Potatoes 🥔 - 3.0 kg on 2024-06-25 with price of 1.0 $/kg (Total: 3.0 $)
+
+Transaction at 2024-06-25 19:44:45
+Carrots 🥕 - 3.0 kg on 2024-06-25 with price of 0.8 $/kg (Total: 2.4000000000000004 $)
+Apple 🍎 - 2.0 kg on 2024-06-25 with price of 1.6 $/kg (Total: 3.2 $)
+Apple 🍎 - 2.0 kg on 2024-06-25 with price of 1.6 $/kg (Total: 3.2 $)
+Cucumber 🥒 - 2.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 2.4 $)
+
+Transaction at 2024-06-25 19+1:47:40
+Cucumber 🥒 - 2.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 2.4 $)
+Cucumber 🥒 - 2.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 2.4 $)
+Cucumber 🥒 - 2.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 2.4 $)
+

@@ -12,6 +12,8 @@ with st.form("Order"):
     submitted = st.form_submit_button('Submit')
 
     if submitted:
-        st.write("yoou have ordered {} {}(s) to be picked up at the {} branch".format(quantity, fruit ,city))
+        st.write("you have ordered {} {}(s) to be picked up at the {} branch".format(quantity, fruit ,city))
 
     st.write('These values, {} {} and {} that were set inside the from area, accessible outside the form'.format(quantity, fruit, city))
+
+# print(fruit)
