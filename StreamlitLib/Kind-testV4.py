@@ -66,90 +66,10 @@ def log_transaction(order):
             f.write(f"{product['name']} - {product['quantity']} kg on {product['date']} with price of {product['price']} $/kg (Total: {product['quantity'] * product['price']} $)\n")
         f.write("\n")
 
-
-
-# def create_receipt_pdf(order):
-#     buffer = BytesIO()
-#     c = canvas.Canvas(buffer, pagesize=(90 * mm, 200 * mm))  # Receipt size in mm
-
-#     # Store details
-#     store_name = "MBMAGASIN"
-#     address = "01 place du Centre - 01234 MAVILLE "
-#     infos = "06 23 45 67 89 - contact@hiboutik.com"
-#     transaction_date = datetime.now().strftime("Le %d %B %Y  Ticket 001")
-
-#     c.setFont("Courier-Bold", 12)
-#     c.drawString(10 * mm, 190 * mm, store_name)
-#     c.setFont("Courier", 8)
-#     c.drawString(10 * mm, 185 * mm, address)
-#     c.drawString(10 * mm, 180 * mm, infos)
-
-#     c.drawString(10 * mm, 175 * mm, transaction_date)
-
-#     # Line separator
-#     c.line(5 * mm, 170 * mm, 85 * mm, 170 * mm)
-
-#     # Customer and server info
-#     c.drawString(10 * mm, 165 * mm, "Servi par: mohammed - #1")
-#     c.drawString(10 * mm, 160 * mm, "Client: mohammed - #2")
-
-#     # Line separator
-#     c.line(5 * mm, 155 * mm, 85 * mm, 155 * mm)
-
-#     y_position = 150  # Initial y position
-#     total_price = 0.0
-#     c.setFont("Courier", 8)
-#     for product in order:
-#         product_total = product['quantity'] * product['price']
-#         total_price += product_total
-#         text = f"{product['name']} - {product['quantity']} kg @ {product['price']} $/kg"
-#         c.drawString(10 * mm, y_position * mm, text)
-#         c.setFont('Courier-Bold',10)
-#         c.drawRightString(82 * mm, y_position * mm, f"{product_total:.2f} $")
-#         c.setFont("Courier", 8)
-#         y_position -= 10 # Move to the next line
-
-#     # Line separator
-#     c.line(5 * mm, (y_position + 5) * mm, 85 * mm, (y_position + 5) * mm)
-
-#     # Total price
-#     c.setFont("Courier-Bold", 10)
-#     c.drawString(10 * mm, (y_position - 5) * mm, "TOTAL")
-#     c.drawRightString(82 * mm, (y_position - 5) * mm, f"{total_price:.2f} $")
-
-#     # Line separator
-#     c.line(5 * mm, (y_position - 10) * mm, 85 * mm, (y_position - 10) * mm)
-
-#     # Additional information
-#     c.setFont("Courier", 8)
-#     c.drawString(10 * mm, (y_position - 15) * mm, "Payé en ESP - TVA incluse")
-#     c.drawString(10 * mm, (y_position - 20) * mm, "Merci de votre visite. À bientôt!")
-
-#     # Footer
-#     c.setFont("Courier", 6)
-#     footer_text = "Lun - Ven 11h00-14h00 / 15h00-19h00\nSamedi 11h00 - 19h30\nwww.mbm.com\nFR00123456789 - RCS PARIS B 123456789"
-#     for line in footer_text.split('\n'):
-#         y_position -= 5
-#         c.drawString(10 * mm, (y_position - 25) * mm, line)  # Adjust y_position for footer
-
-#     c.save()
-#     buffer.seek(0)
-#     return buffer
-
 def create_receipt_pdf(order):
-    # Define initial height and margin for the receipt
-    base_height = 200
-    margin_top = 10
-    margin_bottom = 10
-    line_height = 10
-
-    # Calculate required receipt height
-    num_items = len(order)
-    additional_height = max(0, num_items - 9) * line_height  # Additional height if more than 9 items
-    receipt_height = base_height + additional_height
-
     buffer = BytesIO()
-    c = canvas.Canvas(buffer, pagesize=(90 * mm, receipt_height * mm))  # Dynamic receipt size in mm
+    c = canvas.Canvas(buffer, pagesize=(90 * mm, 200 * mm))  # Receipt size in mm
+    c.translate(mm, mm)  # Margin for better positioning
 
     # Store details
     store_name = "MBMAGASIN"
@@ -158,23 +78,24 @@ def create_receipt_pdf(order):
     transaction_date = datetime.now().strftime("Le %d %B %Y  Ticket 001")
 
     c.setFont("Courier-Bold", 12)
-    c.drawString(10 * mm, (receipt_height - margin_top - 10) * mm, store_name)
+    c.drawString(10 * mm, 190 * mm, store_name)
     c.setFont("Courier", 8)
-    c.drawString(10 * mm, (receipt_height - margin_top - 20) * mm, address)
-    c.drawString(10 * mm, (receipt_height - margin_top - 30) * mm, infos)
-    c.drawString(10 * mm, (receipt_height - margin_top - 40) * mm, transaction_date)
+    c.drawString(10 * mm, 185 * mm, address)
+    c.drawString(10 * mm, 180 * mm, infos)
+
+    c.drawString(10 * mm, 175 * mm, transaction_date)
 
     # Line separator
-    c.line(5 * mm, (receipt_height - margin_top - 50) * mm, 85 * mm, (receipt_height - margin_top - 50) * mm)
+    c.line(5 * mm, 170 * mm, 85 * mm, 170 * mm)
 
     # Customer and server info
-    c.drawString(10 * mm, (receipt_height - margin_top - 60) * mm, "Servi par: mohammed - #1")
-    c.drawString(10 * mm, (receipt_height - margin_top - 70) * mm, "Client: mohammed - #2")
+    c.drawString(10 * mm, 165 * mm, "Servi par: mohammed - #1")
+    c.drawString(10 * mm, 160 * mm, "Client: mohammed - #2")
 
     # Line separator
-    c.line(5 * mm, (receipt_height - margin_top - 80) * mm, 85 * mm, (receipt_height - margin_top - 80) * mm)
+    c.line(5 * mm, 155 * mm, 85 * mm, 155 * mm)
 
-    y_position = receipt_height - margin_top - 90  # Initial y position
+    y_position = 150  # Initial y position
     total_price = 0.0
     c.setFont("Courier", 8)
     for product in order:
@@ -185,7 +106,11 @@ def create_receipt_pdf(order):
         c.setFont('Courier-Bold', 10)
         c.drawRightString(82 * mm, y_position * mm, f"{product_total:.2f} $")
         c.setFont("Courier", 8)
-        y_position -= line_height  # Move to the next line
+        y_position -= 10  # Move to the next line
+        if y_position < 10:  # Check if y_position is too low for the current page
+            c.showPage()
+            y_position = 190  # Reset y_position for the new page
+            c.setFont("Courier", 8)
 
     # Line separator
     c.line(5 * mm, (y_position + 5) * mm, 85 * mm, (y_position + 5) * mm)
@@ -215,7 +140,8 @@ def create_receipt_pdf(order):
     c.save()
     buffer.seek(0)
     return buffer
-# product selection
+
+# Product selection
 st.sidebar.header('Product Selection')
 product_selection = products + ['Other']
 name = st.sidebar.selectbox('Which product', product_selection, key='name')
@@ -233,7 +159,7 @@ if st.sidebar.button('Download Transaction Log') and password == 'wewe':
     with open(LOG_FILE, 'rb') as file:
         st.sidebar.download_button('Download Log File', file, file_name='transaction_log.txt')
 
-# front end
+# Frontend
 with st.form('Command'):
     st.header('Add a Product')
 
@@ -265,18 +191,13 @@ if submit_button:
     st.subheader('Final Order')
     total_price = 0.0
     for i, product in enumerate(st.session_state.order):
-        product_total = product['quantity'] * product['price']
-        round(product_total)
+        product_total = round(product['quantity'] * product['price'], 2)
         total_price += product_total
-        st.write(f"**Product {i + 1}:** {product['name']} - {product['quantity']} kg on {product['date']} with price of {product['price']} $/kg (Total: {round(product_total, 2)} $)")
+        st.write(f"**Product {i + 1}:** {product['name']} - {product['quantity']} kg on {product['date']} with price of {product['price']} $/kg (Total: {product_total} $)")
     st.write(f"**Total Price:** {total_price} $")
 
-    # Log the transaction, see the func en haut
+    buffer = create_receipt_pdf(st.session_state.order)
+    st.download_button('Download Receipt PDF', buffer, file_name='receipt.pdf', mime='application/pdf')
+
     log_transaction(st.session_state.order)
-
-    # Create receipt PDF
-    receipt_buffer = create_receipt_pdf(st.session_state.order)
-    st.download_button('Download Receipt', data=receipt_buffer, file_name=f'receipt_{datetime.now().strftime("%Y%m%d%H%M%S")}.pdf', mime='application/pdf')
-
-    # Reset the order list after submission
     st.session_state.order = []
