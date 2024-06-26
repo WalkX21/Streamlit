@@ -23,3 +23,24 @@ Cucumber 🥒 - 2.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 2.4 $)
 Cucumber 🥒 - 2.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 2.4 $)
 Cucumber 🥒 - 2.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 2.4 $)
 
+Transaction at 2024-06-25 20+1:35:47
+Tomatoes 🍅 - 0.0 kg on 2024-06-25 with price of 1.5 $/kg (Total: 0.0 $)
+Tomatoes 🍅 - 0.11999999999999998 kg on 2024-06-25 with price of 1.5 $/kg (Total: 0.17999999999999997 $)
+
+Transaction at 2024-06-26 08+1:57:27
+Tomatoes 🍅 - 0.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 0.0 $)
+Tomatoes 🍅 - 0.15 kg on 2024-06-26 with price of 1.5 $/kg (Total: 0.22499999999999998 $)
+Tomatoes 🍅 - 6.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 9.0 $)
+
+Transaction at 2024-06-26 08+1:58:18
+Tomatoes 🍅 - 6.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 9.0 $)
+Tomatoes 🍅 - 0.16 kg on 2024-06-26 with price of 1.5 $/kg (Total: 0.24 $)
+
+Transaction at 2024-06-26 09+1:25:37
+Tomatoes 🍅 - 0.16 kg on 2024-06-26 with price of 1.5 $/kg (Total: 0.24 $)
+Tomatoes 🍅 - 0.16 kg on 2024-06-26 with price of 1.5 $/kg (Total: 0.24 $)
+Tomatoes 🍅 - 0.01 kg on 2024-06-26 with price of 1.5 $/kg (Total: 0.015 $)
+blueberry - 0.01 kg on 2024-06-26 with price of 20.0 $/kg (Total: 0.2 $)
+Tomatoes 🍅 - 5.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 7.5 $)
+blueberry - 5.0 kg on 2024-06-26 with price of 20.0 $/kg (Total: 100.0 $)
+

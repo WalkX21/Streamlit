@@ -20,16 +20,16 @@ else:
     products = ['Tomatoes 🍅', 'Potatoes 🥔', 'Carrots 🥕', 'Cucumber 🥒', 'Lettuce 🥬']
     prices = [1.5, 1.0, 0.8, 1.2, 0.9]
 
-    # Save predefined products to CSV
+
     products_df = pd.DataFrame({'product': products, 'price': prices})
     products_df.to_csv(PRODUCTS_FILE, index=False)
 
-# Function to save products to CSV
+
 def save_products():
     df = pd.DataFrame({'product': products, 'price': prices})
     df.to_csv(PRODUCTS_FILE, index=False)
 
-# Initialize session state to store order
+
 if 'order' not in st.session_state:
     st.session_state.order = []
 
@@ -55,7 +55,7 @@ def add_product():
     }
     st.session_state.order.append(product)
 
-# Function to log transaction
+
 def log_transaction(order):
     with open(LOG_FILE, 'a') as f:
         timestamp = datetime.now().strftime('%Y-%m-%d %H+1:%M:%S')
@@ -75,12 +75,12 @@ def create_receipt(order):
     receipt += f"Total Price: {total_price} $\n"
     return receipt
 
-# Sidebar product selection
+# product selection
 st.sidebar.header('Product Selection')
 product_selection = products + ['Other']
 name = st.sidebar.selectbox('Which product', product_selection, key='name')
 
-# If 'Other' is selected, show inputs for new product creation
+# Other ==> let you create a new product
 if name == 'Other':
     with st.sidebar.expander('Create a new product'):
         st.text_input('Enter new product name', key='custom_product_name')
@@ -93,7 +93,7 @@ if st.sidebar.button('Download Transaction Log') and password == 'wewe':
     with open(LOG_FILE, 'rb') as file:
         st.sidebar.download_button('Download Log File', file, file_name='transaction_log.txt')
 
-# Feedback Form
+# front end
 with st.form('Command'):
     st.header('Add a Product')
 
@@ -118,19 +118,20 @@ with st.form('Command'):
 if st.session_state.order:
     st.subheader('Current Order')
     for i, product in enumerate(st.session_state.order):
-        st.write(f"**Product {i + 1}:** {product['name']} - {product['quantity']} kg on {product['date']} with price of {product['price']} $/kg (Total: {product['quantity'] * product['price']} $)")
+        st.write(f"**Product {i + 1}:** {product['name']} - {product['quantity']} kg on {product['date']} with price of {product['price']} $/kg (Total: {round(product['quantity'] * product['price'],2)} $)")
 
-# Submit order
+# Submit the order
 if submit_button:
     st.subheader('Final Order')
     total_price = 0.0
     for i, product in enumerate(st.session_state.order):
         product_total = product['quantity'] * product['price']
+        round(product_total)
         total_price += product_total
-        st.write(f"**Product {i + 1}:** {product['name']} - {product['quantity']} kg on {product['date']} with price of {product['price']} $/kg (Total: {product_total} $)")
+        st.write(f"**Product {i + 1}:** {product['name']} - {product['quantity']} kg on {product['date']} with price of {product['price']} $/kg (Total: {round(product_total,2)} $)")
     st.write(f"**Total Price:** {total_price} $")
 
-    # Log the transaction
+    # Log the transaction, see the func en haut
     log_transaction(st.session_state.order)
 
     # Create receipt
