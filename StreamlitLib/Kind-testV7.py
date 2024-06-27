@@ -1,13 +1,11 @@
 import streamlit as st
 import pandas as pd
-from datetime import date, datetime
+from datetime import datetime
 import os
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import mm
 from io import BytesIO
-
-st.set_page_config(page_title="Store Management")
 
 # File paths
 PRODUCTS_FILE = 'products.csv'
@@ -169,131 +167,194 @@ def create_receipt_pdf(order):
     return buffer
 
 def login_page():
-    st.title('Welcome Back')
-    username = st.text_input('Username')
-    password = st.text_input('Password', type='password')
+    st.markdown(
+        """
+        <style>
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: #f0f2f6;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .login-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .login-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .login-input {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .login-button {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+        .signup-link {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #007bff;
+            cursor: pointer;
+        }
+        </style>
+        """, unsafe_allow_html=True
+    )
+    st.markdown('<div class="login-container">', unsafe_allow_html=True)
+    st.markdown('<div class="login-box">', unsafe_allow_html=True)
+    st.markdown('<div class="login-title">Login</div>', unsafe_allow_html=True)
+    username = st.text_input("Username", key="login_username", value="", help="Enter your username")
+    password = st.text_input("Password", type="password", key="login_password", value="", help="Enter your password")
+    login_button = st.button("Login", key="login_button", class_="login-button")
 
-    # Centering and placing buttons side by side
-    col1, col2 = st.columns(2)
-    with col1:
-        if st.button('Login'):
-            if authenticate(username, password):
-                st.session_state.logged_in = True
-                st.session_state.page = 'command'
-                st.session_state.username = username
-            else:
-                st.error("Incorrect username or password")
-    with col2:
-        if st.button('Sign Up'):
-            st.session_state.page = 'signup'
+    if login_button:
+        if authenticate(username, password):
+            st.session_state.logged_in = True
+            st.session_state.page = 'home'
+        else:
+            st.error("Invalid username or password")
+    
+    st.markdown('<div class="signup-link" onClick="window.location.reload();">Sign up</div>', unsafe_allow_html=True)
+    st.markdown('</div></div>', unsafe_allow_html=True)
 
 def signup_page():
-    st.title('Sign Up')
-    username = st.text_input('Username', key='signup_username')
-    password = st.text_input('Password', type='password', key='signup_password')
-    confirm_password = st.text_input('Confirm Password', type='password', key='confirm_password')
-    
-    # Centering and placing buttons side by side
-    col1, col2 = st.columns(2)
-    with col1:
-        if password == confirm_password:
-            if st.button('Register'):
-                if signup(username, password):
-                    st.success("User registered successfully")
-                    st.session_state.page = 'login'
-                else:
-                    st.error("Username already exists")
+    st.markdown(
+        """
+        <style>
+        .signup-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: #f0f2f6;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .signup-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .signup-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .signup-input {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .signup-button {
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .signup-button:hover {
+            background-color: #218838;
+        }
+        .login-link {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #007bff;
+            cursor: pointer;
+        }
+        </style>
+        """, unsafe_allow_html=True
+    )
+    st.markdown('<div class="signup-container">', unsafe_allow_html=True)
+    st.markdown('<div class="signup-box">', unsafe_allow_html=True)
+    st.markdown('<div class="signup-title">Sign Up</div>', unsafe_allow_html=True)
+    username = st.text_input("Username", key="signup_username", value="", help="Choose a username")
+    password = st.text_input("Password", type="password", key="signup_password", value="", help="Choose a password")
+    signup_button = st.button("Sign Up", key="signup_button", class_="signup-button")
+
+    if signup_button:
+        if signup(username, password):
+            st.success("User registered successfully! Please log in.")
+            st.session_state.page = 'login'
         else:
-            st.error("Passwords do not match")
+            st.error("Username already exists")
+    
+    st.markdown('<div class="login-link" onClick="window.location.reload();">Log in</div>', unsafe_allow_html=True)
+    st.markdown('</div></div>', unsafe_allow_html=True)
 
-def command_page():
-    st.title('Command')
+if st.session_state.page == 'login':
+    login_page()
+elif st.session_state.page == 'signup':
+    signup_page()
+else:
+    st.sidebar.title("MBMAGASIN")
 
-    st.sidebar.header('Product Selection')
-    product_selection = products + ['Other']
-    name = st.sidebar.selectbox('Which product', product_selection, key='name')
+    if st.sidebar.button("Logout"):
+        st.session_state.logged_in = False
+        st.session_state.page = 'login'
 
-    if name == 'Other':
-        with st.sidebar.expander('Create a new product'):
-            st.text_input('Enter new product name', key='custom_product_name')
-            st.number_input('Enter new product price per kg', min_value=0.00, value=0.0, key='custom_product_price')
+    st.title("Order Entry")
 
-    st.sidebar.header('Admin Access')
-    password = st.sidebar.text_input('Enter password', type='password')
-    if st.sidebar.button('Download Transaction Log') and password == 'wewe':
-        with open(LOG_FILE, 'rb') as file:
-            st.sidebar.download_button('Download Log File', file, file_name='transaction_log.txt')
+    col1, col2 = st.columns(2)
 
-    with st.form('Command'):
-        st.header('Add a Product')
+    with col1:
+        st.date_input("Delivery Date", key="date")
+        st.selectbox("Product", options=products + ["Other"], key="name")
 
-        col1, col2 = st.columns(2)
-        with col1:
-            how_many = st.number_input('How much (qt in kg)', min_value=0.00, max_value=10.00, value=0.0, key='how_many')
-        with col2:
-            date_input = st.date_input('Enter Date', value=date.today(), key='date')
+        if st.session_state.name == 'Other':
+            st.text_input("Enter Product Name", key="custom_product_name")
+            st.number_input("Enter Product Price ($/kg)", key="custom_product_price")
 
-            if name != 'Other':
-                product_index = products.index(name)
-                product_price = prices[product_index]
-                st.write(f'Price per kg: {product_price} $')
-            else:
-                product_price = st.session_state.custom_product_price
-                st.write(f'Price per kg: {product_price} $')
+        st.number_input("Quantity (kg)", min_value=0.0, step=0.1, key="how_many")
 
-        add_another = st.form_submit_button('Add Another Product', on_click=add_product)
-        submit_button = st.form_submit_button('Submit Order')
+    with col2:
+        st.button("Add Product to Order", on_click=add_product)
+        st.button("Reset Order", on_click=lambda: st.session_state.update(order=[]))
 
-    if st.session_state.order:
-        st.subheader('Current Order')
-        for i, product in enumerate(st.session_state.order):
-            st.write(f"**Product {i + 1}:** {product['name']} - {product['quantity']} kg on {product['date']} with price of {product['price']} $/kg (Total: {round(product['quantity'] * product['price'], 2)} $)")
+        st.subheader("Current Order")
+        total_cost = 0.0
+        for item in st.session_state.order:
+            st.write(f"{item['name']}: {item['quantity']} kg @ ${item['price']} $/kg on {item['date']}")
+            total_cost += item['quantity'] * item['price']
+        st.write(f"**Total Cost: ${total_cost}**")
 
-    if submit_button:
-        st.subheader('Final Order')
-        total_price = 0.0
-        for i, product in enumerate(st.session_state.order):
-            product_total = round(product['quantity'] * product['price'], 2)
-            total_price += product_total
-            st.write(f"**Product {i + 1}:** {product['name']} - {product['quantity']} kg on {product['date']} with price of {product['price']} $/kg (Total: {product_total} $)")
-        st.write(f"**Total Price:** {total_price} $")
+        if st.button("Log Transaction and Create Receipt"):
+            log_transaction(st.session_state.order)
+            pdf_buffer = create_receipt_pdf(st.session_state.order)
+            st.session_state.order = []
 
-        buffer = create_receipt_pdf(st.session_state.order)
-        st.download_button('Download Receipt PDF', buffer, file_name='receipt.pdf', mime='application/pdf')
+            st.success("Transaction logged and receipt created.")
+            st.download_button(
+                label="Download Receipt",
+                data=pdf_buffer,
+                file_name="receipt.pdf",
+                mime="application/pdf"
+            )
 
-        log_transaction(st.session_state.order)
-        st.session_state.order = []
-
-def stock_management_page():
-    st.title('Stock Management')
-
-    st.subheader('Stock Database')
-    st.table(stock_df)
-
-    with st.form('Update Stock'):
-        product = st.selectbox('Select Product', products)
-        new_stock = st.number_input('Enter new stock quantity', min_value=0)
-        update_button = st.form_submit_button('Update Stock')
-
-    if update_button:
-        stock_index = stock_df[stock_df['product'] == product].index[0]
-        stock_df.at[stock_index, 'stock'] = new_stock
-        save_stock()
-        st.success(f"Stock updated for {product}")
-
-def main():
-    if not st.session_state.logged_in:
-        if st.session_state.page == 'login':
-            login_page()
-        elif st.session_state.page == 'signup':
-            signup_page()
-    else:
-        st.sidebar.header('Navigation')
-        page = st.sidebar.radio('Go to', ['Command', 'Stock Management'])
-        if page == 'Command':
-            command_page()
-        elif page == 'Stock Management':
-            stock_management_page()
-
-if __name__ == '__main__':
-    main()
+   

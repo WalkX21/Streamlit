@@ -31,13 +31,6 @@ if os.path.exists(STOCK_FILE):
 else:
     stock_df = pd.DataFrame({'product': products, 'stock': [100] * len(products)})
     stock_df.to_csv(STOCK_FILE, index=False)
-# if os.path.exists(STOCK_FILE):
-#     stock_df = pd.read_csv(STOCK_FILE)
-#     stock = stock_df.set_index('product')['stock'].to_dict()
-# else:
-#     stock = {product: 100 for product in products}  # Initial stock for each product
-#     stock_df = pd.DataFrame({'product': list(stock.keys()), 'stock': list(stock.values())})
-#     stock_df.to_csv(STOCK_FILE, index=False)
 
 if not os.path.exists(USERS_FILE):
     users_df = pd.DataFrame(columns=['username', 'password'])
@@ -282,40 +275,7 @@ def stock_management_page():
         stock_df.at[stock_index, 'stock'] = new_stock
         save_stock()
         st.success(f"Stock updated for {product}")
-    # st.header('Stock Management')
-
-    # # Display stock table
-    # stock_df = pd.DataFrame({'product': list(stock.keys()), 'price': prices, 'stock': list(stock.values())})
-    # st.table(stock_df)
-
-    # st.subheader('Add Stock')
-    # with st.form('Add Stock'):
-    #     product_selection = products
-    #     product_name = st.selectbox('Select product to add stock', product_selection, key='stock_product_name')
-    #     add_stock_quantity = st.number_input('Add quantity to stock (kg)', min_value=0.00, value=0.0, key='add_stock_quantity')
-    #     add_stock_button = st.form_submit_button('Add Stock')
-
-    # if add_stock_button:
-    #     stock[product_name] += add_stock_quantity
-    #     save_stock()
-    #     st.success(f"Added {add_stock_quantity} kg to the stock of {product_name}. New stock: {stock[product_name]} kg")
-
-    # st.subheader('Reduce Stock')
-    # with st.form('Reduce Stock'):
-    #     product_selection = products
-    #     product_name = st.selectbox('Select product to reduce stock', product_selection, key='reduce_stock_product_name')
-    #     reduce_stock_quantity = st.number_input('Reduce quantity from stock (kg)', min_value=0.00, value=0.0, key='reduce_stock_quantity')
-    #     reduce_stock_button = st.form_submit_button('Reduce Stock')
-
-    # if reduce_stock_button:
-    #     if reduce_stock_quantity <= stock[product_name]:
-    #         stock[product_name] -= reduce_stock_quantity
-    #         save_stock()
-    #         st.success(f"Reduced {reduce_stock_quantity} kg from the stock of {product_name}. New stock: {stock[product_name]} kg")
-    #     else:
-    #         st.error(f"Cannot reduce {reduce_stock_quantity} kg from the stock of {product_name}. Only {stock[product_name]} kg available in stock.")
-
-
+   
 
 
 def main():

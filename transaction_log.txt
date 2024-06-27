@@ -347,3 +347,6 @@ Raspberry - 3.0 kg on 2024-06-27 with price of 3.8 $/kg (Total: 11.3999999999999
 Cabbage - 3.0 kg on 2024-06-27 with price of 0.9 $/kg (Total: 2.7 $)
 Garlic 🧄 - 3.0 kg on 2024-06-27 with price of 0.6 $/kg (Total: 1.7999999999999998 $)
 
+Transaction at 2024-06-27 18:32:03
+Pear 🍐 - 10.0 kg on 2024-06-27 with price of 1.8 $/kg (Total: 18.0 $)
+
