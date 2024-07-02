@@ -1,5 +1,6 @@
-username,password
-tomato,tomato
-Melon,melon
-caca,caca
-,
+username,password,loyalty,phone
+tomato,tomato,True,
+Melon,melon,,
+loay,loayb08,True,603170206.0
+caca,caca,True,45678765.0
+admin,,True,

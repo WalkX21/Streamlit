@@ -1,11 +1,13 @@
 import streamlit as st
 import pandas as pd
-from datetime import datetime
+from datetime import date, datetime
 import os
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import mm
 from io import BytesIO
+
+# st.set_page_config(page_title="Store Management", layout="wide")
 
 # File paths
 PRODUCTS_FILE = 'products.csv'
@@ -31,7 +33,7 @@ else:
     stock_df.to_csv(STOCK_FILE, index=False)
 
 if not os.path.exists(USERS_FILE):
-    users_df = pd.DataFrame(columns=['username', 'password'])
+    users_df = pd.DataFrame(columns=['username', 'password', 'loyalty', 'phone'])
     users_df.to_csv(USERS_FILE, index=False)
 
 def save_products():
@@ -41,6 +43,7 @@ def save_products():
 def save_stock():
     stock_df.to_csv(STOCK_FILE, index=False)
 
+# Initialize session state
 if 'order' not in st.session_state:
     st.session_state.order = []
 
@@ -50,16 +53,19 @@ if 'logged_in' not in st.session_state:
 if 'page' not in st.session_state:
     st.session_state.page = 'login'
 
+if 'username' not in st.session_state:
+    st.session_state.username = ''
+
 def authenticate(username, password):
     users_df = pd.read_csv(USERS_FILE)
     user = users_df[(users_df['username'] == username) & (users_df['password'] == password)]
     return not user.empty
 
-def signup(username, password):
+def signup(username, password, loyalty, phone):
     users_df = pd.read_csv(USERS_FILE)
     if username in users_df['username'].values:
         return False
-    new_user = pd.DataFrame({'username': [username], 'password': [password]})
+    new_user = pd.DataFrame({'username': [username], 'password': [password], 'loyalty': [loyalty], 'phone': [phone]})
     users_df = pd.concat([users_df, new_user], ignore_index=True)
     users_df.to_csv(USERS_FILE, index=False)
     return True
@@ -101,7 +107,7 @@ def log_transaction(order):
             f.write(f"{product['name']} - {product['quantity']} kg on {product['date']} with price of {product['price']} $/kg (Total: {product['quantity'] * product['price']} $)\n")
         f.write("\n")
 
-def create_receipt_pdf(order):
+def create_receipt_pdf(order, loyalty_discount):
     buffer = BytesIO()
     c = canvas.Canvas(buffer, pagesize=(90 * mm, 200 * mm))
     c.translate(mm, mm)
@@ -142,6 +148,15 @@ def create_receipt_pdf(order):
             y_position = 190
             c.setFont("Courier", 8)
 
+    if loyalty_discount:
+        discount_amount = total_price * 0.2
+        total_price -= discount_amount
+        c.line(5 * mm, (y_position + 5) * mm, 85 * mm, (y_position + 5) * mm)
+        c.setFont("Courier-Bold", 10)
+        c.drawString(10 * mm, (y_position - 5) * mm, "LOYALTY DISCOUNT")
+        c.drawRightString(82 * mm, (y_position - 5) * mm, f"-{discount_amount:.2f} $")
+        y_position -= 20
+
     c.line(5 * mm, (y_position + 5) * mm, 85 * mm, (y_position + 5) * mm)
 
     c.setFont("Courier-Bold", 10)
@@ -170,191 +185,108 @@ def login_page():
     st.markdown(
         """
         <style>
-        .login-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 80vh;
-            background-color: #f0f2f6;
-            border-radius: 10px;
-            padding: 20px;
-        }
-        .login-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
+        .login-page {
+            background-color: #f0f0f0;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 400px;
+            margin: auto;
+            margin-top: 100px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .login-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .login-input {
-            margin-bottom: 10px;
-            width: 100%;
-        }
-        .login-button {
-            width: 100%;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        .login-button:hover {
-            background-color: #0056b3;
-        }
-        .signup-link {
-            margin-top: 10px;
-            font-size: 14px;
-            color: #007bff;
-            cursor: pointer;
+        .login-page h2 {
+            text-align: center;
         }
         </style>
-        """, unsafe_allow_html=True
+        """,
+        unsafe_allow_html=True
     )
-    st.markdown('<div class="login-container">', unsafe_allow_html=True)
-    st.markdown('<div class="login-box">', unsafe_allow_html=True)
-    st.markdown('<div class="login-title">Login</div>', unsafe_allow_html=True)
-    username = st.text_input("Username", key="login_username", value="", help="Enter your username")
-    password = st.text_input("Password", type="password", key="login_password", value="", help="Enter your password")
-    login_button = st.button("Login", key="login_button", class_="login-button")
-
-    if login_button:
+    st.markdown('<div class="login-page"><h2>Login</h2></div>', unsafe_allow_html=True)
+    username = st.text_input("Username")
+    password = st.text_input("Password", type="password")
+    if st.button("Login"):
         if authenticate(username, password):
             st.session_state.logged_in = True
-            st.session_state.page = 'home'
+            st.session_state.username = username
+            st.session_state.page = 'main'
         else:
             st.error("Invalid username or password")
-    
-    st.markdown('<div class="signup-link" onClick="window.location.reload();">Sign up</div>', unsafe_allow_html=True)
-    st.markdown('</div></div>', unsafe_allow_html=True)
+    st.markdown("Don't have an account? [Sign Up](#signup)", unsafe_allow_html=True)
 
 def signup_page():
     st.markdown(
         """
         <style>
-        .signup-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 80vh;
-            background-color: #f0f2f6;
-            border-radius: 10px;
-            padding: 20px;
-        }
-        .signup-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
+        .signup-page {
+            background-color: #f0f0f0;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 400px;
+            margin: auto;
+            margin-top: 100px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .signup-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .signup-input {
-            margin-bottom: 10px;
-            width: 100%;
-        }
-        .signup-button {
-            width: 100%;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        .signup-button:hover {
-            background-color: #218838;
-        }
-        .login-link {
-            margin-top: 10px;
-            font-size: 14px;
-            color: #007bff;
-            cursor: pointer;
+        .signup-page h2 {
+            text-align: center;
         }
         </style>
-        """, unsafe_allow_html=True
+        """,
+        unsafe_allow_html=True
     )
-    st.markdown('<div class="signup-container">', unsafe_allow_html=True)
-    st.markdown('<div class="signup-box">', unsafe_allow_html=True)
-    st.markdown('<div class="signup-title">Sign Up</div>', unsafe_allow_html=True)
-    username = st.text_input("Username", key="signup_username", value="", help="Choose a username")
-    password = st.text_input("Password", type="password", key="signup_password", value="", help="Choose a password")
-    signup_button = st.button("Sign Up", key="signup_button", class_="signup-button")
-
-    if signup_button:
-        if signup(username, password):
-            st.success("User registered successfully! Please log in.")
+    st.markdown('<div class="signup-page"><h2>Sign Up</h2></div>', unsafe_allow_html=True)
+    username = st.text_input("Username")
+    password = st.text_input("Password", type="password")
+    loyalty = st.checkbox("Join Loyalty Program")
+    phone = st.text_input("Phone Number")
+    if st.button("Sign Up"):
+        if signup(username, password, loyalty, phone):
+            st.success("Account created successfully! You can now log in.")
             st.session_state.page = 'login'
         else:
-            st.error("Username already exists")
-    
-    st.markdown('<div class="login-link" onClick="window.location.reload();">Log in</div>', unsafe_allow_html=True)
-    st.markdown('</div></div>', unsafe_allow_html=True)
+            st.error("Username already exists. Please choose a different username.")
+
+def main_page():
+    st.header("Store Management")
+    st.subheader("Select Product and Quantity")
+    product_name = st.selectbox("Product Name", options=products + ["Other"], key='name')
+    if product_name == 'Other':
+        custom_product_name = st.text_input("Enter custom product name", key='custom_product_name')
+        custom_product_price = st.number_input("Enter custom product price", key='custom_product_price')
+    how_many = st.number_input("How many kg?", min_value=0, key='how_many')
+    order_date = st.date_input("Order Date", value=date.today(), key='date')
+    if st.button("Add to Order"):
+        add_product()
+        st.session_state.how_many = 0
+
+    st.subheader("Order Summary")
+    total = 0.0
+    for product in st.session_state.order:
+        st.write(f"{product['name']} - {product['quantity']} kg @ {product['price']} $/kg on {product['date']}")
+        total += product['quantity'] * product['price']
+    st.write(f"Total: {total} $")
+
+    users_df = pd.read_csv(USERS_FILE)
+    current_user = users_df[users_df['username'] == st.session_state.username].iloc[0]
+    loyalty_discount = False
+    if current_user['loyalty']:
+        st.write("Loyalty discount applied (20% off)")
+        loyalty_discount = True
+        total *= 0.8
+
+    if st.button("Complete Order"):
+        log_transaction(st.session_state.order)
+        receipt_buffer = create_receipt_pdf(st.session_state.order, loyalty_discount)
+        st.download_button(
+            label="Download Receipt",
+            data=receipt_buffer,
+            file_name="receipt.pdf",
+            mime="application/pdf"
+        )
+        st.session_state.order = []
 
 if st.session_state.page == 'login':
     login_page()
 elif st.session_state.page == 'signup':
     signup_page()
 else:
-    st.sidebar.title("MBMAGASIN")
-
-    if st.sidebar.button("Logout"):
-        st.session_state.logged_in = False
-        st.session_state.page = 'login'
-
-    st.title("Order Entry")
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.date_input("Delivery Date", key="date")
-        st.selectbox("Product", options=products + ["Other"], key="name")
-
-        if st.session_state.name == 'Other':
-            st.text_input("Enter Product Name", key="custom_product_name")
-            st.number_input("Enter Product Price ($/kg)", key="custom_product_price")
-
-        st.number_input("Quantity (kg)", min_value=0.0, step=0.1, key="how_many")
-
-    with col2:
-        st.button("Add Product to Order", on_click=add_product)
-        st.button("Reset Order", on_click=lambda: st.session_state.update(order=[]))
-
-        st.subheader("Current Order")
-        total_cost = 0.0
-        for item in st.session_state.order:
-            st.write(f"{item['name']}: {item['quantity']} kg @ ${item['price']} $/kg on {item['date']}")
-            total_cost += item['quantity'] * item['price']
-        st.write(f"**Total Cost: ${total_cost}**")
-
-        if st.button("Log Transaction and Create Receipt"):
-            log_transaction(st.session_state.order)
-            pdf_buffer = create_receipt_pdf(st.session_state.order)
-            st.session_state.order = []
-
-            st.success("Transaction logged and receipt created.")
-            st.download_button(
-                label="Download Receipt",
-                data=pdf_buffer,
-                file_name="receipt.pdf",
-                mime="application/pdf"
-            )
-
-   
+    main_page()

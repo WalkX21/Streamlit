@@ -1,352 +1,49 @@
-Transaction at 2024-06-25 19:43:43
-Tomatoes 🍅 - 10.0 kg on 2024-06-25 with price of 1.5 $/kg (Total: 15.0 $)
-Lettuce 🥬 - 0.5 kg on 2024-06-25 with price of 0.9 $/kg (Total: 0.45 $)
-Strawberry 🍓 - 0.5 kg on 2024-06-25 with price of 3.0 $/kg (Total: 1.5 $)
-Cucumber 🥒 - 3.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 3.5999999999999996 $)
-Cucumber 🥒 - 3.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 3.5999999999999996 $)
-Cucumber 🥒 - 3.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 3.5999999999999996 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-25 with price of 1.0 $/kg (Total: 3.0 $)
-Melon - 3.0 kg on 2024-06-25 with price of 2.0 $/kg (Total: 6.0 $)
+Transaction at 2024-07-01 14:03:28
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Discount applied: -36.00 $
 
-Transaction at 2024-06-25 19:44:20
-Lettuce 🥬 - 3.0 kg on 2024-06-25 with price of 0.9 $/kg (Total: 2.7 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-25 with price of 1.0 $/kg (Total: 3.0 $)
+Transaction at 2024-07-01 14:03:29
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Discount applied: -18.00 $
 
-Transaction at 2024-06-25 19:44:45
-Carrots 🥕 - 3.0 kg on 2024-06-25 with price of 0.8 $/kg (Total: 2.4000000000000004 $)
-Apple 🍎 - 2.0 kg on 2024-06-25 with price of 1.6 $/kg (Total: 3.2 $)
-Apple 🍎 - 2.0 kg on 2024-06-25 with price of 1.6 $/kg (Total: 3.2 $)
-Cucumber 🥒 - 2.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 2.4 $)
+Transaction at 2024-07-01 14:03:31
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Discount applied: -18.00 $
 
-Transaction at 2024-06-25 19+1:47:40
-Cucumber 🥒 - 2.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 2.4 $)
-Cucumber 🥒 - 2.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 2.4 $)
-Cucumber 🥒 - 2.0 kg on 2024-06-25 with price of 1.2 $/kg (Total: 2.4 $)
+Transaction at 2024-07-01 14:03:32
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Tomatoes 🍅 - 10.0 kg on 2024-07-01 with price of 2.0 $/kg (Total: 20.0 $)
+Discount applied: -18.00 $
 
-Transaction at 2024-06-25 20+1:35:47
-Tomatoes 🍅 - 0.0 kg on 2024-06-25 with price of 1.5 $/kg (Total: 0.0 $)
-Tomatoes 🍅 - 0.11999999999999998 kg on 2024-06-25 with price of 1.5 $/kg (Total: 0.17999999999999997 $)
+Transaction at 2024-07-01 14:11:20
+Carrots 🥕 - 10.0 kg on 2024-07-01 with price of 0.8 $/kg (Total: 8.0 $)
+Carrots 🥕 - 10.0 kg on 2024-07-01 with price of 0.8 $/kg (Total: 8.0 $)
+Carrots 🥕 - 10.0 kg on 2024-07-01 with price of 0.8 $/kg (Total: 8.0 $)
+Carrots 🥕 - 10.0 kg on 2024-07-01 with price of 0.8 $/kg (Total: 8.0 $)
+Discount applied: -9.60 $
 
-Transaction at 2024-06-26 08+1:57:27
-Tomatoes 🍅 - 0.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 0.0 $)
-Tomatoes 🍅 - 0.15 kg on 2024-06-26 with price of 1.5 $/kg (Total: 0.22499999999999998 $)
-Tomatoes 🍅 - 6.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 9.0 $)
+Transaction at 2024-07-01 14:11:25
+Lettuce 🥬 - 10.0 kg on 2024-07-01 with price of 0.9 $/kg (Total: 9.0 $)
+Lettuce 🥬 - 10.0 kg on 2024-07-01 with price of 0.9 $/kg (Total: 9.0 $)
+Lettuce 🥬 - 10.0 kg on 2024-07-01 with price of 0.9 $/kg (Total: 9.0 $)
+Lettuce 🥬 - 10.0 kg on 2024-07-01 with price of 0.9 $/kg (Total: 9.0 $)
+Lettuce 🥬 - 10.0 kg on 2024-07-01 with price of 0.9 $/kg (Total: 9.0 $)
+Discount applied: -13.50 $
 
-Transaction at 2024-06-26 08+1:58:18
-Tomatoes 🍅 - 6.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 9.0 $)
-Tomatoes 🍅 - 0.16 kg on 2024-06-26 with price of 1.5 $/kg (Total: 0.24 $)
-
-Transaction at 2024-06-26 09+1:25:37
-Tomatoes 🍅 - 0.16 kg on 2024-06-26 with price of 1.5 $/kg (Total: 0.24 $)
-Tomatoes 🍅 - 0.16 kg on 2024-06-26 with price of 1.5 $/kg (Total: 0.24 $)
-Tomatoes 🍅 - 0.01 kg on 2024-06-26 with price of 1.5 $/kg (Total: 0.015 $)
-blueberry - 0.01 kg on 2024-06-26 with price of 20.0 $/kg (Total: 0.2 $)
-Tomatoes 🍅 - 5.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 7.5 $)
-blueberry - 5.0 kg on 2024-06-26 with price of 20.0 $/kg (Total: 100.0 $)
-
-Transaction at 2024-06-26 14+1:14:22
-blueberry🫐 - 5.0 kg on 2024-06-26 with price of 20.0 $/kg (Total: 100.0 $)
-Melon🍈 - 5.0 kg on 2024-06-26 with price of 2.0 $/kg (Total: 10.0 $)
-Potatoes 🥔 - 5.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 5.0 $)
-
-Transaction at 2024-06-26 14+1:19:18
-blueberry🫐 - 0.6 kg on 2024-06-26 with price of 20.0 $/kg (Total: 12.0 $)
-Carrots 🥕 - 3.0 kg on 2024-06-26 with price of 0.8 $/kg (Total: 2.4000000000000004 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-Tomatoes 🍅 - 3.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 4.5 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-
-Transaction at 2024-06-26 14:24:19
-Tomatoes 🍅 - 5.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 7.5 $)
-Potatoes 🥔 - 5.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 5.0 $)
-Carrots 🥕 - 5.0 kg on 2024-06-26 with price of 0.8 $/kg (Total: 4.0 $)
-
-Transaction at 2024-06-26 14:29:09
-Melon🍈 - 10.0 kg on 2024-06-26 with price of 2.0 $/kg (Total: 20.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 16.0 $)
-
-Transaction at 2024-06-26 14:30:44
-Tomatoes 🍅 - 5.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 7.5 $)
-
-Transaction at 2024-06-26 14+1:31:05
-Tomatoes 🍅 - 10.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 15.0 $)
-
-Transaction at 2024-06-26 14+1:31:49
-Tomatoes 🍅 - 10.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 15.0 $)
-
-Transaction at 2024-06-26 14+1:33:37
-Tomatoes 🍅 - 10.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 15.0 $)
-
-Transaction at 2024-06-26 14+1:39:17
-Tomatoes 🍅 - 9.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 13.5 $)
-
-Transaction at 2024-06-26 14+1:46:19
-Tomatoes 🍅 - 10.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 15.0 $)
-
-Transaction at 2024-06-26 14+1:47:16
-Tomatoes 🍅 - 10.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 15.0 $)
-Carrots 🥕 - 10.0 kg on 2024-06-26 with price of 0.8 $/kg (Total: 8.0 $)
-
-Transaction at 2024-06-26 14+1:49:57
-Tomatoes 🍅 - 10.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 15.0 $)
-Cucumber 🥒 - 10.0 kg on 2024-06-26 with price of 1.2 $/kg (Total: 12.0 $)
-
-Transaction at 2024-06-26 14+1:52:20
-Tomatoes 🍅 - 10.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 15.0 $)
-Potatoes 🥔 - 10.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 10.0 $)
-
-Transaction at 2024-06-26 14+1:52:31
-Potatoes 🥔 - 10.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 10.0 $)
-Tomatoes 🍅 - 10.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 15.0 $)
-
-Transaction at 2024-06-26 14+1:56:30
-Tomatoes 🍅 - 10.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 15.0 $)
-Potatoes 🥔 - 10.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 10.0 $)
-
-Transaction at 2024-06-26 14+1:59:49
-Potatoes 🥔 - 10.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 10.0 $)
-Tomatoes 🍅 - 10.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 15.0 $)
-
-Transaction at 2024-06-26 15+1:00:30
-Tomatoes 🍅 - 10.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 15.0 $)
-Potatoes 🥔 - 10.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 10.0 $)
-
-Transaction at 2024-06-26 15+1:01:06
-Tomatoes 🍅 - 10.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 15.0 $)
-Cucumber 🥒 - 10.0 kg on 2024-06-26 with price of 1.2 $/kg (Total: 12.0 $)
-
-Transaction at 2024-06-26 15+1:02:57
-Tomatoes 🍅 - 10.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 15.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 16.0 $)
-
-Transaction at 2024-06-26 19+1:46:25
-Cucumber 🥒 - 2.0 kg on 2024-06-26 with price of 1.2 $/kg (Total: 2.4 $)
-Tomatoes 🍅 - 3.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 4.5 $)
-
-Transaction at 2024-06-26 19+1:48:56
-Lettuce 🥬 - 3.0 kg on 2024-06-26 with price of 0.9 $/kg (Total: 2.7 $)
-Strawberry 🍓 - 3.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 9.0 $)
-Cucumber 🥒 - 3.0 kg on 2024-06-26 with price of 1.2 $/kg (Total: 3.5999999999999996 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-
-Transaction at 2024-06-26 19+1:48:57
-
-Transaction at 2024-06-26 19+1:49:50
-
-Transaction at 2024-06-26 19+1:49:53
-
-Transaction at 2024-06-26 19+1:49:57
-
-Transaction at 2024-06-26 19+1:49:59
-
-Transaction at 2024-06-26 19+1:50:06
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-
-Transaction at 2024-06-26 20+1:45:04
-Melon🍈 - 1.5 kg on 2024-06-26 with price of 2.0 $/kg (Total: 3.0 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-26 with price of 1.0 $/kg (Total: 3.0 $)
-Tomatoes 🍅 - 2.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 3.0 $)
-Cucumber 🥒 - 1.0 kg on 2024-06-26 with price of 1.2 $/kg (Total: 1.2 $)
-
-Transaction at 2024-06-26 21+1:10:31
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-
-Transaction at 2024-06-26 21+1:11:16
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-
-Transaction at 2024-06-26 21+1:11:31
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-
-Transaction at 2024-06-26 21+1:15:57
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Avocado 🥑 - 1.0 kg on 2024-06-26 with price of 2.6 $/kg (Total: 2.6 $)
-Garlic 🧄 - 0.5 kg on 2024-06-26 with price of 0.6 $/kg (Total: 0.3 $)
-Lettuce 🥬 - 1.0 kg on 2024-06-26 with price of 0.9 $/kg (Total: 0.9 $)
-Carrots 🥕 - 1.0 kg on 2024-06-26 with price of 0.8 $/kg (Total: 0.8 $)
-Blueberry 🫐 - 1.0 kg on 2024-06-26 with price of 20.0 $/kg (Total: 20.0 $)
-Cherry 🍒 - 1.0 kg on 2024-06-26 with price of 4.0 $/kg (Total: 4.0 $)
-Pumpkin 🎃 - 1.0 kg on 2024-06-26 with price of 1.7 $/kg (Total: 1.7 $)
-Raspberry - 1.0 kg on 2024-06-26 with price of 3.8 $/kg (Total: 3.8 $)
-Blackberry - 1.0 kg on 2024-06-26 with price of 4.5 $/kg (Total: 4.5 $)
-Olive 🫒 - 1.0 kg on 2024-06-26 with price of 2.3 $/kg (Total: 2.3 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-
-Transaction at 2024-06-26 21+1:16:23
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-Eggplant 🍆 - 1.0 kg on 2024-06-26 with price of 1.9 $/kg (Total: 1.9 $)
-
-Transaction at 2024-06-26 21+1:18:55
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-Strawberry 🍓 - 1.0 kg on 2024-06-26 with price of 3.0 $/kg (Total: 3.0 $)
-
-Transaction at 2024-06-26 21+1:22:00
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-26 with price of 1.5 $/kg (Total: 1.5 $)
-
-Transaction at 2024-06-26 21+1:25:58
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-Apple 🍎 - 1.0 kg on 2024-06-26 with price of 1.6 $/kg (Total: 1.6 $)
-
-Transaction at 2024-06-27 09+1:00:34
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-
-Transaction at 2024-06-27 14:05:51
-Blueberry 🫐 - 2.0 kg on 2024-06-27 with price of 20.0 $/kg (Total: 40.0 $)
-Orange 🍊 - 4.0 kg on 2024-06-27 with price of 1.3 $/kg (Total: 5.2 $)
-Strawberry 🍓 - 4.0 kg on 2024-06-27 with price of 3.0 $/kg (Total: 12.0 $)
-Cherry 🍒 - 4.0 kg on 2024-06-27 with price of 4.0 $/kg (Total: 16.0 $)
-
-Transaction at 2024-06-27 14:29:17
-Tomatoes 🍅 - 1.0 kg on 2024-06-27 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-27 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-27 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-27 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-27 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-27 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-27 with price of 1.5 $/kg (Total: 1.5 $)
-Tomatoes 🍅 - 1.0 kg on 2024-06-27 with price of 1.5 $/kg (Total: 1.5 $)
-
-Transaction at 2024-06-27 15:09:02
-Apple 🍎 - 0.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 0.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-Apple 🍎 - 10.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 16.0 $)
-
-Transaction at 2024-06-27 15:11:36
-Potatoes 🥔 - 1.0 kg on 2024-06-27 with price of 1.0 $/kg (Total: 1.0 $)
-Potatoes 🥔 - 1.0 kg on 2024-06-27 with price of 1.0 $/kg (Total: 1.0 $)
-Potatoes 🥔 - 1.0 kg on 2024-06-27 with price of 1.0 $/kg (Total: 1.0 $)
-Potatoes 🥔 - 1.0 kg on 2024-06-27 with price of 1.0 $/kg (Total: 1.0 $)
-
-Transaction at 2024-06-27 15:26:04
-Tomatoes 🍅 - 3.0 kg on 2024-06-27 with price of 1.5 $/kg (Total: 4.5 $)
-Potatoes 🥔 - 3.0 kg on 2024-06-27 with price of 1.0 $/kg (Total: 3.0 $)
-Carrots 🥕 - 3.0 kg on 2024-06-27 with price of 0.8 $/kg (Total: 2.4000000000000004 $)
-Cucumber 🥒 - 3.0 kg on 2024-06-27 with price of 1.2 $/kg (Total: 3.5999999999999996 $)
-Apple 🍎 - 3.0 kg on 2024-06-27 with price of 1.6 $/kg (Total: 4.800000000000001 $)
-Blueberry 🫐 - 3.0 kg on 2024-06-27 with price of 20.0 $/kg (Total: 60.0 $)
-Pineapple 🍍 - 3.0 kg on 2024-06-27 with price of 2.8 $/kg (Total: 8.399999999999999 $)
-Mango 🥭 - 3.0 kg on 2024-06-27 with price of 3.1 $/kg (Total: 9.3 $)
-Pumpkin 🎃 - 3.0 kg on 2024-06-27 with price of 1.7 $/kg (Total: 5.1 $)
-Pineapple 🍍 - 3.0 kg on 2024-06-27 with price of 2.8 $/kg (Total: 8.399999999999999 $)
-Banana 🍌 - 3.0 kg on 2024-06-27 with price of 1.1 $/kg (Total: 3.3000000000000003 $)
-Pear 🍐 - 3.0 kg on 2024-06-27 with price of 1.8 $/kg (Total: 5.4 $)
-Pumpkin 🎃 - 3.0 kg on 2024-06-27 with price of 1.7 $/kg (Total: 5.1 $)
-Raspberry - 3.0 kg on 2024-06-27 with price of 3.8 $/kg (Total: 11.399999999999999 $)
-Avocado 🥑 - 3.0 kg on 2024-06-27 with price of 2.6 $/kg (Total: 7.800000000000001 $)
-Raspberry - 3.0 kg on 2024-06-27 with price of 3.8 $/kg (Total: 11.399999999999999 $)
-Cabbage - 3.0 kg on 2024-06-27 with price of 0.9 $/kg (Total: 2.7 $)
-Garlic 🧄 - 3.0 kg on 2024-06-27 with price of 0.6 $/kg (Total: 1.7999999999999998 $)
-
-Transaction at 2024-06-27 18:32:03
-Pear 🍐 - 10.0 kg on 2024-06-27 with price of 1.8 $/kg (Total: 18.0 $)
+Transaction at 2024-07-01 14:11:30
+Kiwi 🥝 - 10.0 kg on 2024-07-01 with price of 2.4 $/kg (Total: 24.0 $)
+Kiwi 🥝 - 10.0 kg on 2024-07-01 with price of 2.4 $/kg (Total: 24.0 $)
+Kiwi 🥝 - 10.0 kg on 2024-07-01 with price of 2.4 $/kg (Total: 24.0 $)
+Kiwi 🥝 - 10.0 kg on 2024-07-01 with price of 2.4 $/kg (Total: 24.0 $)
+Discount applied: -28.80 $
 
